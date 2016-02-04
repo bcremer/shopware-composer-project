@@ -17,3 +17,25 @@ $ ./app/install.sh
 
 Update the version number of shopware/shopware composer.json.
 Run composer update shopware/shopware.
+
+## Plugins
+
+Plugins are gettings installed into `Plugins/`.
+
+### Prepare plugins for composer installation
+
+Given you have a plugin called `SwagTestMe` (`Shopware_Plugins_Frontend_SwagTestMe_Bootstrap`) add your dependencies in your plugins `composer.json` file.
+Also set the `type` to `shopware-frontend-plugin`.
+
+
+```
+{
+  "name": "swag/TestMe",
+  "type": "shopware-frontend-plugin",
+  "require": {
+    "domnikl/statsd": "^2.3.0",
+    "psy/psysh": "^0.6"
+  }
+}
+```
+
