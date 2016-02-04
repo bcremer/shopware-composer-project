@@ -10,11 +10,11 @@ declare -r __DIR__=$(dirname $__FILE__)
 cd $__DIR__/..
 
 rm -rf  web/themes/Backend/ExtJs/backend
-mkdir web/themes/Backend/ExtJs/backend -p
+mkdir -p web/themes/Backend/ExtJs/backend
 ln -s ../../../../../vendor/shopware/shopware/themes/Backend/ExtJs/backend/_resources web/themes/Backend/ExtJs/backend/_resources
 
 rm -rf  web/engine/Library
-mkdir web/engine/Library -p
+mkdir -p web/engine/Library
 ln -s ../../../vendor/shopware/shopware/engine/Library/CodeMirror web/engine/Library/CodeMirror
 ln -s ../../../vendor/shopware/shopware/engine/Library/ExtJs  web/engine/Library/ExtJs
 ln -s ../../../vendor/shopware/shopware/engine/Library/TinyMce web/engine/Library/TinyMce
