@@ -1,4 +1,13 @@
-#!/bin/bash
+#!/usr/bin/env bash
+set -o nounset
+set -o errexit
+set -o pipefail
+
+# Set magic variables for current FILE & DIR
+declare -r __FILE__=$(readlink -f ${BASH_SOURCE[0]})
+declare -r __DIR__=$(dirname $__FILE__)
+
+cd $__DIR__/..
 
 rm -rf  web/themes/Backend/ExtJs/backend
 mkdir web/themes/Backend/ExtJs/backend -p

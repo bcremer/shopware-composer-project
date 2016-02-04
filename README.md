@@ -15,6 +15,7 @@ Please configure database credentials here.
 
 ```bash
 $ ./app/install.sh
+$ ./app/create_symlinks.sh
 ```
 
 ## Updating Shopware
