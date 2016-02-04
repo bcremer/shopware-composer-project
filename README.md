@@ -1,5 +1,9 @@
 # Composer template for Shopware projects
 
+## Warning
+
+This is a proof of concept and not production ready.
+
 ## Installation
 
 ```
