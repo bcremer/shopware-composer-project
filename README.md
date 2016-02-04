@@ -2,7 +2,7 @@
 
 
 ```
-composer create-project bcremer/shopware-composer-project my_project_name --no-interaction
+composer create-project bcremer/shopware-composer-project my_project_name --no-interaction --stability=dev
 ```
 
 ## Updating Shopware
