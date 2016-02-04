@@ -14,7 +14,15 @@ if [ -f $__DIR__/../.env ]; then
 fi
 
 echo "Setup Database"
-$__DIR__/../bin/console sw:setup  --steps=drop,create,setup,importDemodata,setupShop --host="$SHOP_HOST" --path="$SHOP_PATH"
+$__DIR__/../bin/console sw:setup  --steps=drop,create,setup
+
+if [ $IMPORT_DEMODATA = true ] ; then
+    echo "Import Demodata"
+    $__DIR__/../bin/console sw:setup  --steps=importDemodata
+fi
+
+echo "Setup Shop Configuration"
+$__DIR__/../bin/console sw:setup  --steps=setupShop --host="$SHOP_HOST" --path="$SHOP_PATH"
 
 echo "Generate Attributes"
 $__DIR__/../bin/console sw:generate:attributes
