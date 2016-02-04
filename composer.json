@@ -1,0 +1,43 @@
+{
+    "name": "bcremer/shopware-composer-project",
+    "description": "Project template for Shopware projects with composer",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Benjamin Cremer",
+            "email": "bc@shopware.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": { "": "src/" },
+        "classmap": [ "app/AppKernel.php" ]
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/bcremer/shopware"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "shopware/shopware": "dev-composer-project",
+        "composer/installers": "^1.0"
+    },
+    "extra": {
+        "installer-paths": {
+            "Plugins/Local/Backend/{$name}/": ["type:shopware-backend-plugin"],
+            "Plugins/Local/Core/{$name}/": ["type:shopware-core-plugin"],
+            "Plugins/Local/Frontend/{$name}/": ["type:shopware-frontend-plugin"]
+        }
+    },
+    "scripts": {
+        "post-update-cmd": "Shopware\\Components\\Composer::replaceVersionString",
+        "post-install-cmd": "Shopware\\Components\\Composer::replaceVersionString"
+    },
+    "config": {
+        "platform": {
+            "php": "5.5.9"
+        }
+    }
+}
