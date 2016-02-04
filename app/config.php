@@ -1,12 +1,10 @@
 <?php
-
 return array_replace_recursive($this->loadConfig($this->AppPath() . 'Configs/Default.php'), [
     'db' => [
-        'username' => 'root',
-        'password' => 'root',
-        'dbname' => 'shopware',
-        'host' => 'localhost',
-        'port' => '3306'
+        'username' => getenv('DB_USERNAME'),
+        'password' => getenv('DB_PASSWORD'),
+        'dbname'   => getenv('DB_DATABASE'),
+        'host'     => getenv('DB_HOST'),
     ],
 
     'pluginnamespaces' => [

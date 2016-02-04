@@ -7,6 +7,10 @@ require_once __DIR__.'/../app/autoload.php';
 
 use Shopware\Components\Console\Application;
 use Symfony\Component\Console\Input\ArgvInput;
+use Dotenv\Dotenv;
+
+$dotenv = new Dotenv(__DIR__ . '/../');
+$dotenv->load();
 
 $input = new ArgvInput();
 $env = $input->getParameterOption(array('--env', '-e'), getenv('SHOPWARE_ENV') ?: 'production');

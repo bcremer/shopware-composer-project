@@ -10,3 +10,4 @@
 /web/media/
 /web/engine/
 /web/themes/
+.env

@@ -7,8 +7,14 @@ set -o pipefail
 declare -r __FILE__=$(readlink -f ${BASH_SOURCE[0]})
 declare -r __DIR__=$(dirname $__FILE__)
 
+# Source .env file
+if [ -f $__DIR__/../.env ]; then
+    echo Found .env
+    source $__DIR__/../.env
+fi
+
 echo "Setup Database"
-$__DIR__/../build/setupDatabase.php --steps=drop,create,setup,importDemodata,setupShop --host="shopware.local" --path=""
+$__DIR__/../bin/console sw:setup  --steps=drop,create,setup,importDemodata,setupShop --host="$SHOP_HOST" --path="$SHOP_PATH"
 
 echo "Generate Attributes"
 $__DIR__/../bin/console sw:generate:attributes
@@ -23,4 +29,6 @@ echo "Disable Firstrun Wizard"
 $__DIR__/../bin/console sw:firstrunwizard:disable
 
 echo "Create admin user"
-$__DIR__/../bin/console sw:create:admin --name="Demo user" --email="demo@example.com" --username="demo" --password="demo" -n
+$__DIR__/../bin/console sw:create:admin --name="$ADMIN_NAME" --email="$ADMIN_EMAIL" --username="$ADMIN_USERNAME" --password="$ADMIN_PASSWORD" -n
+
+
