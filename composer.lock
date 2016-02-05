@@ -1421,12 +1421,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bcremer/shopware.git",
-                "reference": "0efe703bd653e0eba44a9c5766ddc0791a1fa746"
+                "reference": "97a82c9cb81b65691edb896238f3a71c71627e01"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bcremer/shopware/zipball/0efe703bd653e0eba44a9c5766ddc0791a1fa746",
-                "reference": "0efe703bd653e0eba44a9c5766ddc0791a1fa746",
+                "url": "https://api.github.com/repos/bcremer/shopware/zipball/97a82c9cb81b65691edb896238f3a71c71627e01",
+                "reference": "97a82c9cb81b65691edb896238f3a71c71627e01",
                 "shasum": ""
             },
             "require": {
@@ -1523,7 +1523,7 @@
                 "source": "https://github.com/shopware/shopware",
                 "issues": "https://issues.shopware.com"
             },
-            "time": "2016-02-04 13:29:56"
+            "time": "2016-02-09 18:41:39"
         },
         {
             "name": "symfony/config",

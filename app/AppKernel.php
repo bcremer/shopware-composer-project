@@ -9,7 +9,7 @@ class AppKernel extends Kernel
      */
     protected function getConfigPath()
     {
-        return dirname(__DIR__).'/app/config.php';
+        return __DIR__.'/config/config.php';
     }
 
     /**

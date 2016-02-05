@@ -13,7 +13,7 @@ $dotenv = new Dotenv(__DIR__ . '/../');
 $dotenv->load();
 
 $input = new ArgvInput();
-$env = $input->getParameterOption(array('--env', '-e'), getenv('SHOPWARE_ENV') ?: 'production');
+$env = $input->getParameterOption(array('--env', '-e'), getenv('SHOPWARE_ENV'));
 
 $kernel = new AppKernel($env, false);
 $application = new Application($kernel);

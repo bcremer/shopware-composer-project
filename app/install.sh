@@ -14,18 +14,15 @@ if [ -f $__DIR__/../.env ]; then
 fi
 
 echo "Setup Database"
-$__DIR__/../bin/console sw:setup  --steps=drop,create,setup
+$__DIR__/../bin/console sw:setup --steps=drop,create,setup
 
 if [ $IMPORT_DEMODATA = true ] ; then
     echo "Import Demodata"
-    $__DIR__/../bin/console sw:setup  --steps=importDemodata
+    $__DIR__/../bin/console sw:setup --steps=importDemodata
 fi
 
 echo "Setup Shop Configuration"
 $__DIR__/../bin/console sw:setup  --steps=setupShop --host="$SHOP_HOST" --path="$SHOP_PATH"
-
-echo "Generate Attributes"
-$__DIR__/../bin/console sw:generate:attributes
 
 echo "Import Snippets"
 $__DIR__/../bin/console sw:snippets:to:db --include-plugins

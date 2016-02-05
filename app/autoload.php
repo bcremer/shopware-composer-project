@@ -12,7 +12,7 @@ AnnotationRegistry::registerLoader([$loader, 'loadClass']);
 
 define('PUBLICDIR', dirname(__DIR__).'/web/');
 define('PROJECTDIR', dirname(__DIR__));
-
-
+define('FRONTENDTHEMEDIR', dirname(__DIR__).'/Themes');
+define('PUBLICPATH', '');
 
 return $loader;

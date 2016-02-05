@@ -29,18 +29,21 @@ Plugins are gettings installed into `Plugins/`.
 
 ### Prepare plugins for composer installation
 
-Given you have a plugin called `SwagTestMe` (`Shopware_Plugins_Frontend_SwagTestMe_Bootstrap`) add your dependencies in your plugins `composer.json` file.
+Given you have a plugin called `SwagMediaSftp` (`Shopware_Plugins_Frontend_SwagMediaSftp_Bootstrap`) add your dependencies in your plugins `composer.json` file.
 Also set the `type` to `shopware-frontend-plugin`.
-
 
 ```
 {
-  "name": "swag/TestMe",
-  "type": "shopware-frontend-plugin",
-  "require": {
-    "domnikl/statsd": "^2.3.0",
-    "psy/psysh": "^0.6"
-  }
+    "name": "shopwarelabs/swag-media-sftp",
+    "type": "shopware-frontend-plugin",
+    "description": "The SFTP adapter allows you to manage your media files in shopware on a SFTP environment.",
+    "license": "MIT",
+    "extra": {
+        "installer-name": "SwagMediaSftp"
+    },
+    "require": {
+        "league/flysystem-sftp": "^1.0"
+    }
 }
 ```
 
