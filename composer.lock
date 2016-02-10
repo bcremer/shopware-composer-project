@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d7abc7914055c32ffb7d289121e20de8",
-    "content-hash": "3df41eadff1c417ce85dbf80811e7ba3",
+    "hash": "5cacaa9edc4782ff83848b91ed8506e8",
+    "content-hash": "ab7b15e954958088749205b4ed0c34b2",
     "packages": [
         {
             "name": "beberlei/assert",
@@ -1420,8 +1420,14 @@
             "version": "dev-composer-project",
             "source": {
                 "type": "git",
-                "url": "/home/bcremer/www/5.2",
+                "url": "https://github.com/bcremer/shopware.git",
                 "reference": "74e9ab4bd745383cf8b50a8bd0fe06a2d1ff76b8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bcremer/shopware/zipball/74e9ab4bd745383cf8b50a8bd0fe06a2d1ff76b8",
+                "reference": "74e9ab4bd745383cf8b50a8bd0fe06a2d1ff76b8",
+                "shasum": ""
             },
             "require": {
                 "beberlei/assert": "2.4.0",

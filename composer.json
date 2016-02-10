@@ -16,7 +16,7 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "file:///home/bcremer/www/5.2"
+            "url": "https://github.com/bcremer/shopware"
         }
     ],
     "require": {
