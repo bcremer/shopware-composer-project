@@ -36,10 +36,5 @@
         "post-root-package-install": [
             "php -r \"copy('.env.example', '.env');\""
         ]
-    },
-    "config": {
-        "platform": {
-            "php": "5.5.9"
-        }
     }
 }

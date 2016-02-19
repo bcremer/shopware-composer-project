@@ -11,7 +11,7 @@ return array_replace_recursive($this->loadConfig($this->AppPath() . 'Configs/Def
         'host'     => $db['host'],
     ],
 
-    'pluginnamespaces' => [
+    'plugin_directories' => [
         'Default'   => $this->AppPath('Plugins_' . 'Default'),
         'Local'     => PROJECTDIR . '/Plugins/Local/',
         'Community' => PROJECTDIR . '/Plugins/Community/',
