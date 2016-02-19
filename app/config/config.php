@@ -1,10 +1,14 @@
 <?php
+
+$db = array_merge(['port' => 3306], parse_url(getenv(getenv('DATABASE_URL_NAME') ?: 'DATABASE_URL')));
+
 return array_replace_recursive($this->loadConfig($this->AppPath() . 'Configs/Default.php'), [
+
     'db' => [
-        'username' => getenv('DB_USERNAME'),
-        'password' => getenv('DB_PASSWORD'),
-        'dbname'   => getenv('DB_DATABASE'),
-        'host'     => getenv('DB_HOST'),
+        'username' => $db['user'],
+        'password' => $db['pass'],
+        'dbname'   => substr($db['path'], 1),
+        'host'     => $db['host'],
     ],
 
     'pluginnamespaces' => [
