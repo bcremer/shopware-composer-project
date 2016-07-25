@@ -15,5 +15,11 @@ if ($kernel->isHttpCacheEnabled()) {
 }
 
 $request = Request::createFromGlobals();
+
+// Trust the heroku load balancer
+// see: https://devcenter.heroku.com/articles/getting-started-with-symfony#trusting-the-load-balancer
+Request::setTrustedProxies([$request->server->get('REMOTE_ADDR')]);
+Request::setTrustedHeaderName(Request::HEADER_FORWARDED, null);
+
 $response = $kernel->handle($request);
 $response->send();
