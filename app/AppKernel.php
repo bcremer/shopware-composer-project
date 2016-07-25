@@ -1,6 +1,9 @@
 <?php
 
 use Shopware\Kernel;
+use Symfony\Component\Config\FileLocator;
+use Symfony\Component\DependencyInjection\ContainerBuilder;
+use Symfony\Component\DependencyInjection\Loader\XmlFileLoader;
 
 class AppKernel extends Kernel
 {
@@ -28,5 +31,13 @@ class AppKernel extends Kernel
     public function getLogDir()
     {
         return dirname(__DIR__).'/var/logs';
+    }
+
+    protected function prepareContainer(ContainerBuilder $container)
+    {
+        $loader = new XmlFileLoader($container, new FileLocator(__DIR__));
+        $loader->load('services.xml');
+
+        return parent::prepareContainer($container);
     }
 }
