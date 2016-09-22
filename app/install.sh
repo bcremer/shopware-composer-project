@@ -13,6 +13,7 @@ if [ -f $__DIR__/../.env ]; then
     source $__DIR__/../.env
 fi
 
+$__DIR__/../bin/console sw:cache:clear
 
 $__DIR__/../bin/console sw:database:setup --steps=drop,create,import
 
