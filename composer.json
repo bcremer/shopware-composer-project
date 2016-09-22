@@ -20,7 +20,7 @@
         }
     ],
     "require": {
-        "php": ">=5.5.9",
+        "php": "^5.6.4||^7.0",
         "ext-apcu": "*",
         "shopware/shopware": "dev-composer-project",
         "composer/installers": "^1.0",
