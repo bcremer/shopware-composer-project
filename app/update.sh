@@ -14,7 +14,7 @@ if [ -f $__DIR__/../.env ]; then
 fi
 
 
-$__DIR__/../bin/console sw:migrations:migrate --mode=update
+$__DIR__/../bin/console sw:migrations:migrate --mode=update || true
 
 $__DIR__/create_symlinks.sh
 

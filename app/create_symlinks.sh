@@ -8,6 +8,7 @@ declare -r __FILE__=$(readlink -f ${BASH_SOURCE[0]})
 declare -r __DIR__=$(dirname $__FILE__)
 
 cd $__DIR__/..
+echo "Create symlinks in $__DIR__"
 
 rm -rf  web/themes/Backend/ExtJs/backend
 mkdir -p web/themes/Backend/ExtJs/backend
