@@ -33,6 +33,9 @@
             "Plugins/Local/Frontend/{$name}/": ["type:shopware-frontend-plugin"]
         }
     },
+    "config": {
+         "optimize-autoloader": true
+    },
     "scripts": {
         "post-root-package-install": [
             "php -r \"copy('.env.example', '.env');\""

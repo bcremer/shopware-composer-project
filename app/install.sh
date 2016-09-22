@@ -20,7 +20,7 @@ if [ $IMPORT_DEMODATA = true ] ; then
     $__DIR__/../bin/console sw:database:setup --steps=importDemodata
 fi
 
-$__DIR__/../bin/console sw:database:setup --steps=setupShop --host="$SHOP_HOST" --path="$SHOP_PATH"
+$__DIR__/../bin/console sw:database:setup --steps=setupShop --url="$SHOP_URL"
 
 $__DIR__/../bin/console sw:snippets:to:db --include-plugins
 

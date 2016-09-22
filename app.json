@@ -19,8 +19,7 @@
     "ADMIN_NAME":         { "description": "Administrator Name", "value": "Demo Admin"},
     "ADMIN_USERNAME":     { "description": "Administrator username", "value": "admin" },
     "ADMIN_PASSWORD":     { "description": "Administrator password" },
-    "SHOP_HOST":          { "value": "", "required": false},
-    "SHOP_PATH":          { "value": "", "required": false},
+    "SHOP_URL":           { "value": "", "required": false},
     "IMPORT_DEMODATA":    { "value": false },
     "SHOPWARE_ENV":       { "value": "production" }
   },
