@@ -11,6 +11,15 @@ return array_replace_recursive($this->loadConfig($this->AppPath() . 'Configs/Def
         'host'     => $db['host'],
     ],
 
+    'phpSettings' => [
+        'display_errors' => 1
+    ],
+
+    'front' => array(
+        'showException' => true,
+        'throwExceptions' => false,
+    ),
+
     'plugin_directories' => [
         'Default'   => $this->AppPath('Plugins_' . 'Default'),
         'Local'     => PROJECTDIR . '/Plugins/Local/',
