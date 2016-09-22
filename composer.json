@@ -39,9 +39,6 @@
     "scripts": {
         "post-root-package-install": [
             "php -r \"copy('.env.example', '.env');\""
-        ],
-        "post-install-cmd": [
-            "app/update.sh"
         ]
     }
 }
