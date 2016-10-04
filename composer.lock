@@ -1505,12 +1505,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bcremer/shopware.git",
-                "reference": "8c204db18691de340b520c72742687d912a69c01"
+                "reference": "bf3ec9d9661fe42ca6d753e513c11dcf404bf892"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bcremer/shopware/zipball/8c204db18691de340b520c72742687d912a69c01",
-                "reference": "8c204db18691de340b520c72742687d912a69c01",
+                "url": "https://api.github.com/repos/bcremer/shopware/zipball/bf3ec9d9661fe42ca6d753e513c11dcf404bf892",
+                "reference": "bf3ec9d9661fe42ca6d753e513c11dcf404bf892",
                 "shasum": ""
             },
             "require": {
@@ -1637,7 +1637,7 @@
                 "source": "https://github.com/shopware/shopware",
                 "issues": "https://issues.shopware.com"
             },
-            "time": "2016-09-22 11:22:17"
+            "time": "2016-10-04 10:49:26"
         },
         {
             "name": "symfony/class-loader",
@@ -1807,7 +1807,7 @@
         },
         {
             "name": "symfony/debug",
-            "version": "v2.8.11",
+            "version": "v2.8.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/debug.git",
@@ -2369,7 +2369,7 @@
         },
         {
             "name": "symfony/options-resolver",
-            "version": "v2.8.11",
+            "version": "v2.8.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/options-resolver.git",
@@ -2653,16 +2653,16 @@
         },
         {
             "name": "symfony/serializer",
-            "version": "v3.1.4",
+            "version": "v3.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/serializer.git",
-                "reference": "81674b4a42507b6f3ba3a0661b35bfad8d25f841"
+                "reference": "8de2ed908fafd717a2025ce054b65dd9d5e15f5e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/serializer/zipball/81674b4a42507b6f3ba3a0661b35bfad8d25f841",
-                "reference": "81674b4a42507b6f3ba3a0661b35bfad8d25f841",
+                "url": "https://api.github.com/repos/symfony/serializer/zipball/8de2ed908fafd717a2025ce054b65dd9d5e15f5e",
+                "reference": "8de2ed908fafd717a2025ce054b65dd9d5e15f5e",
                 "shasum": ""
             },
             "require": {
@@ -2722,7 +2722,7 @@
             ],
             "description": "Symfony Serializer Component",
             "homepage": "https://symfony.com",
-            "time": "2016-08-19 15:12:52"
+            "time": "2016-09-25 08:27:07"
         },
         {
             "name": "symfony/translation",
